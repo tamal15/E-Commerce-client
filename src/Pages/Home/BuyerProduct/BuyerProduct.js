@@ -11,7 +11,7 @@ const BuyerProduct = () => {
     //   },[])
 
     useEffect(() => {
-        fetch('http://localhost:5000/postBuyer')
+        fetch('https://e-commerce-sarong-backend-main.vercel.app/postBuyer')
             .then(res => res.json())
             .then(data => setWork(data))
     }, [])

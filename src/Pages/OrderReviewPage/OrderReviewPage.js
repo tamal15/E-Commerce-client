@@ -130,9 +130,7 @@ const OrderReviewPage = () => {
                 <Grid container spacing={2} columns={{ xs: 12, sm: 6, md: 6 }}>
                     <Grid item xs={12} sm={3} md={3}>
                         {
-                            cart?.sort((a, b) => {
-                                return (a.ProductPrice - b.ProductPrice)
-                            })?.map(cart =>
+                            cart?.sort((a, b) => (a.ProductPrice - b.ProductPrice))?.map(cart =>
                                 <Box sx={{ pb: 3 }} key={cart._id} setData={cart.buyerEmail} >
                                     <Paper
                                         sx={{
